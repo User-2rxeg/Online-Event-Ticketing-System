@@ -1,0 +1,121 @@
+.unauthorized-container {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.unauthorized-content {
+    text-align: center;
+    background: white;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.unauthorized-content h1 {
+    color: #dc3545;
+    margin-bottom: 1rem;
+}
+
+.unauthorized-content p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.unauthorized-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Common button styles */
+.primary-button,
+.secondary-button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.primary-button {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #357abd;
+}
+
+.secondary-button {
+    background-color: #e9ecef;
+    color: #495057;
+}
+
+.secondary-button:hover {
+    background-color: #dee2e6;
+}
+
+/* Loading indicator styles */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+/* Form styles */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #495057;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .unauthorized-content {
+        padding: 2rem;
+    }
+
+    .unauthorized-actions {
+        flex-direction: column;
+    }
+
+    .form-container {
+        padding: 1rem;
+    }
+}
